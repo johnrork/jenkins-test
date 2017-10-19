@@ -1,10 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('Test') {
-      agent { dockerfile true }
+    stage('Build') {
       steps {
-        sh 'pip install django'
+        sh 'echo "hello"'
       }
     }
   }
