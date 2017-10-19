@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker { image 'debian' } 
+    dockerfile true
   }
   stages {
     stage('') {
