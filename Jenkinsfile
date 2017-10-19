@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh 'docker run -d -p 8000:8000 foobar --name foobar'
+        sh 'docker rm -f foobar_box'
+        sh 'docker run -d -p 8000:8000 --name foobar_box foobar'
       }
     }
   }
