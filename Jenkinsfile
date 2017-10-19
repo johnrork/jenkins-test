@@ -3,7 +3,7 @@ pipeline {
     docker { image 'debian' } 
   }
   stages {
-    stage('') {
+    stage('Test') {
       steps {
         sh 'echo "Hello world"'
       }
