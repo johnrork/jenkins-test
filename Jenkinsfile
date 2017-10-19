@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        checkout scm
         sh 'docker build . -t foobar'
       }
     }
